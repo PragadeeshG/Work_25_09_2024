@@ -1,0 +1,16 @@
+create table if not exists serverless_additional_top_ups(
+configuration_id Integer not null,
+configuration_owner varchar(255) null,
+pub_sub_code Integer null,
+cloud_scheduler varchar(255) null,
+console_tools varchar(255) null,
+no_of_topics varchar(255) null,
+api_gateway_enabled char null,
+lambas_as_function varchar(255) null,
+lambdas_group varchar(255) null,
+memory varchar(255) null,
+cpus varchar(255) null,
+gpus varchar(255) null,
+cron_job_option varchar(255) null,
+global_infra_support varchar(255) null,
+constraint serverless_additional_top_ups_pk primary key(configuration_id));

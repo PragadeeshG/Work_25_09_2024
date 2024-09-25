@@ -1,0 +1,15 @@
+create table if not exists serverless_configuration(
+configuration_id Integer not null,
+configuration_owner varchar(255) null,
+provisioned char null,
+provisioning_time Integer null,
+ongoing_administration varchar(255) null,
+elastic_scaling varchar(255) null,
+capacity_planning Integer null,
+persistent_connections Integer null,
+maintenance_state varchar(255) null,
+resource_util_time Integer null,
+resource_limits varchar(255) null,
+status varchar(255) null,
+obsolete_config_removal varchar(255) null,
+constraint serverless_configuration_pk primary key(configuration_id));
